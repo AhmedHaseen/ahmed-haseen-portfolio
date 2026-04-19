@@ -2,7 +2,7 @@
 
 Data Analyst & Aspiring Data Scientist based in Sri Lanka, passionate about transforming data into actionable insights and building real-world data-driven applications.
 
-🌐 **Live:** [ahmed-haseen-portfolio.netlify.app](https://ahmed-haseen-portfolio.netlify.app)
+🌐 **Live:** [ahmed-haseen-portfolio.netlify.app](https://ahmed-haseen-portfolio.netlify.ap)
 
 ---
 
@@ -16,7 +16,7 @@ This is my personal portfolio website built with React 18 and Tailwind CSS. It f
 
 **Data & Analytics** — Python, Pandas, NumPy, SQL, Power BI, Tableau, Excel
 
-**Machine Learning** — Scikit-learn, Random Forest, Logistic Regression, Feature Engineering
+**Machine Learning** — Scikit-learn, Random Forest, Logistic Regression, EDA ,  Feature Engineering
 
 **Web Development** — React.js, Node.js, Express.js, Tailwind CSS
 
