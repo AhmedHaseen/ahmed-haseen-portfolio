@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@property --accent-dynamic {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #00d4aa;
+}
+
+:root {
+  --accent-dynamic: #00d4aa;
+  animation: accentColorCycle 4.8s ease-in-out infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    @apply bg-white dark:bg-[#0A0F1E] text-gray-800 dark:text-gray-100 transition-colors duration-300;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Syne", sans-serif;
+  }
+
+  .text-accent {
+    color: #00d4aa;
+  }
+  .bg-accent {
+    background-color: #00d4aa;
+  }
+  .border-accent {
+    border-color: #00d4aa;
+  }
+
+  .card-light {
+    @apply bg-white border border-gray-100 shadow-sm;
+  }
+  .card-dark {
+    @apply bg-white/5 border border-white/10;
+  }
+  .card {
+    @apply rounded-xl transition-all duration-300;
+  }
+
+  .section-bg-alt {
+    @apply bg-gray-50 dark:bg-[#111827];
+  }
+  .section-bg {
+    @apply bg-white dark:bg-[#0A0F1E];
+  }
+
+  /* Noise texture overlay */
+  .noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #00d4aa44;
+  border-radius: 3px;
+}
+
+/* Fade-up animation utility */
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
+.animate-delay-600 {
+  animation-delay: 600ms;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+@keyframes accentColorCycle {
+  0%,
+  100% {
+    --accent-dynamic: #00d4aa;
+  }
+  50% {
+    --accent-dynamic: #38bdf8;
+  }
+}
+
+.text-accent,
+[class*="text-[#00D4AA]"] {
+  color: var(--accent-dynamic) !important;
+}
+
+.contact-address-value {
+  color: inherit !important;
+}
+
+.animated-accent-btn {
+  background: var(--accent-dynamic);
+  color: #0a0f1e;
+  box-shadow: 0 10px 22px
+    color-mix(in srgb, var(--accent-dynamic) 28%, transparent);
+  transition:
+    background-color 250ms ease,
+    box-shadow 250ms ease,
+    transform 200ms ease,
+    filter 250ms ease;
+}
+
+.animated-accent-btn:hover {
+  background: color-mix(in srgb, var(--accent-dynamic) 78%, white);
+  box-shadow: 0 14px 28px
+    color-mix(in srgb, var(--accent-dynamic) 38%, transparent);
+  filter: saturate(1.08);
+}
