@@ -2,7 +2,7 @@
 
 Data Analyst & Aspiring Data Scientist based in Sri Lanka, passionate about transforming data into actionable insights and building real-world data-driven applications.
 
-🌐 **Live:** [ahmed-haseen-portfolio.vercel.app](https://ahmed-haseen-portfolio.vercel.app)
+🌐 **Live:** [ahmed-haseen-portfolio.netlify.app](https://ahmed-haseen-portfolio.netlify.app)
 
 ---
 
