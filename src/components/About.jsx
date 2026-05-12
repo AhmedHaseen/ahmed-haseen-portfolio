@@ -53,8 +53,8 @@ export default function About() {
                 Python, SQL, Power BI, and machine learning
               </strong>
               , and I'm constantly expanding into AI-driven automation and
-              predictive modelling. Beyond tech, I'm a Taekwondo coach and
-              martial arts competitor — discipline and creativity run through
+              predictive modelling. Beyond tech, I'm a
+              martial arts competitor ( Karate & Taekwondo ) — discipline and creativity run through
               everything I do.
             </p>
 

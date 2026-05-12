@@ -1,20 +1,22 @@
 import ConfidFaceImage from "../assets/Confidface_img.png";
 import SaveBiteImage from "../assets/SaveBite_WebApp_Img.png";
+import SQLProjImage from "../assets/SQL_Proj_Img.png";
+import BIDataInsightImg from "../assets/BI_Data Insight_Img.png";
 
 export const personal = {
   name: "Ahmed Haseen",
   title: "Data Analyst | Aspiring Data Scientist",
   email: "haseen2002hsn@gmail.com",
-  phone: "+94704934696",
+  phone: "+94767502206",
   location: "Sri Lanka",
   linkedin: "https://linkedin.com/in/ahmedhaseen",
   github: "https://github.com/ahmedhaseen",
   summary:
-    "Motivated Data Analyst and aspiring Data Scientist pursuing a BSc (Hons) in Software Engineering at Sabaragamuwa University (GPA 3.73/4.00). Skilled in turning data into actionable insights using Python, SQL, and Power BI, with growing expertise in machine learning and AI-driven automation.",
+    "Motivated Data Analyst and aspiring Data Scientist pursuing a BSc (Hons) in Software Engineering at Sabaragamuwa University (GPA 3.64/4.00). Skilled in turning data into actionable insights using Python, SQL, and Power BI, with growing expertise in machine learning and AI-driven automation.",
 };
 
 export const stats = [
-  { num: "3.73", label: "GPA / 4.00" },
+  { num: "3.64", label: "GPA / 4.00" },
   { num: "5+", label: "Projects Built" },
   { num: "4+", label: "CERTIFICATIONS" },
   { num: "2+", label: "Years Volunteering" },
@@ -79,13 +81,31 @@ export const proficiency = [
 export const projects = [
   {
     title: "Customer Churn Prediction",
-    status: "Completed",
+    status: "Ongoing",
     category: "data",
-    desc: "Binary classification model predicting customer churn using Logistic Regression and Random Forest. Performed EDA, feature engineering, and precision-recall analysis to identify at-risk customers and support retention strategies.",
+    desc: (
+      <>
+        <strong>Ongoing telecom churn analysis project</strong> covering{" "}
+        <strong>ETL</strong>, interactive dashboards, and{" "}
+        <strong>ML-based prediction</strong>. Built <strong>SQL</strong> Server
+        pipelines with staging tables and optimized views, developed{" "}
+        <strong>power bi</strong>
+        dashboards with <strong>DAX</strong> measures and custom tooltips, and
+        implemented a<strong>Random Forest classifier</strong> in Python to
+        identify high-risk customers and support retention strategies.
+      </>
+    ),
     image: null,
-    tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
+    tech: [
+      "SQL",
+      "Power BI",
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "Jupyter Notebook",
+    ],
     github: "https://github.com/ahmedhaseen",
-    demo: null,
+    demo: "https://github.com/ahmedhaseen",
     featured: true,
   },
   {
@@ -96,29 +116,45 @@ export const projects = [
     image: ConfidFaceImage,
     tech: ["n8n", "Agentic AI", "Real-time Analytics", "Data Visualization"],
     github: "https://github.com/ahmedhaseen",
-    demo: null,
+    demo: "https://github.com/ahmedhaseen",
     featured: true,
   },
   {
-    title: "Retail Sales Data Dashboard",
+    title: "Data Careers: Trends & Insights Dashboard",
     status: "Completed",
     category: "data",
-    desc: "Interactive Power BI dashboard analysing regional sales performance, profitability, and customer segments. Cleaned and transformed datasets using Python for accurate reporting and trend monitoring.",
-    image: null,
-    tech: ["Power BI", "Python", "Pandas", "NumPy", "DAX"],
-    github: "https://github.com/ahmedhaseen",
-    demo: null,
+    desc: (
+      <>
+        Power BI dashboard built on 630+ survey responses from global data
+        professionals. Used <strong>Power Query</strong> for data preparation,
+        <strong>DAX</strong> for core <strong>KPIs</strong>, and interactive
+        <strong>slicers</strong> to explore salary, role, and satisfaction
+        trends.
+      </>
+    ),
+    image: BIDataInsightImg,
+    tech: ["Power BI", "Power Query", "DAX", "Data Visualization", "EDA"],
+    github: "https://github.com/AhmedHaseen/data-careers-powerbi-dashboard",
+    demo: "https://canva.link/7va6fzlmowfbwk0",
     featured: false,
   },
   {
-    title: "E-Commerce Product Insights",
+    title: "SQL Data Cleaning & EDA — Global Layoffs",
     status: "Completed",
     category: "data",
-    desc: "Analysed e-commerce sales data using Python, Pandas, and MySQL to identify product demand and pricing trends. Built a Power BI dashboard for marketing and inventory decisions.",
-    image: null,
-    tech: ["Python", "Pandas", "MySQL", "Power BI"],
-    github: "https://github.com/ahmedhaseen",
-    demo: null,
+    desc: (
+      <>
+        SQL-based <strong>data cleaning</strong> and{" "}
+        <strong>exploratory data analysis</strong> on a global layoffs dataset.
+        Cleaned missing and duplicate records, standardized fields, and used
+        CTEs, window functions, and ranking to reveal layoff trends by industry,
+        company, and time period.
+      </>
+    ),
+    image: SQLProjImage,
+    tech: ["MySQL", "CTEs", "Window Functions", "EDA"],
+    github: "https://github.com/AhmedHaseen/mysql-portfolio-project",
+    demo: "https://canva.link/gzrknrp4i7jz4ty",
     featured: false,
   },
   {

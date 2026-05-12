@@ -12,6 +12,7 @@ function ProjectCard({
   demo,
   image,
   delay,
+  status,
 }) {
   const [ref, inView] = useInView();
 
@@ -32,7 +33,7 @@ function ProjectCard({
             src={image}
             alt={`${title} preview`}
             loading="lazy"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 dark:from-[#13213a] dark:to-[#0A0F1E]">
@@ -43,9 +44,16 @@ function ProjectCard({
         )}
       </div>
 
-      <h3 className="font-display font-bold text-gray-900 dark:text-white text-lg mb-3 leading-snug pr-12">
-        {title}
-      </h3>
+      <div className="mb-3 flex items-start justify-between gap-3">
+        <h3 className="font-display font-bold text-gray-900 dark:text-white text-lg leading-snug">
+          {title}
+        </h3>
+        {status && (
+          <span className="shrink-0 rounded-full border border-[#00D4AA]/20 bg-[#00D4AA]/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#00D4AA]">
+            {status}
+          </span>
+        )}
+      </div>
       <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed flex-1 mb-4">
         {desc}
       </p>
@@ -110,7 +118,7 @@ export default function Projects() {
             </span>
             <span className="h-0.5 w-12 mt-1 bg-[#00D4AA]/70 rounded-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
             <span className="text-xs text-[#00D4AA] mt-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-              Explore section ->
+              Explore section -&gt;
             </span>
           </a>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -130,7 +138,7 @@ export default function Projects() {
             </span>
             <span className="h-0.5 w-12 mt-1 bg-[#00D4AA]/70 rounded-full origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
             <span className="text-xs text-[#00D4AA] mt-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-              Explore section ->
+              Explore section -&gt;
             </span>
           </a>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
