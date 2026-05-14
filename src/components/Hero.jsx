@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import dpFinalImg from "../assets/Dp_Final.png";
 import newDpImg from "../assets/New_Dp.png";
-import cvFile from "../assets/My CV_Current.pdf";
+import cvFile from "../assets/Ahmed Haseen.pdf";
 import { personal, stats } from "../data/portfolioData";
 
 export default function Hero() {
