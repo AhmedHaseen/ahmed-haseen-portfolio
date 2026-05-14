@@ -2,6 +2,20 @@ import ConfidFaceImage from "../assets/Confidface_img.png";
 import SaveBiteImage from "../assets/SaveBite_WebApp_Img.png";
 import SQLProjImage from "../assets/SQL_Proj_Img.png";
 import BIDataInsightImg from "../assets/BI_Data Insight_Img.png";
+import ExcelProjImg from "../assets/Excel_Proj_img.png";
+import {
+  Code,
+  BarChart3,
+  Search,
+  Bot,
+  Database,
+  Globe,
+  Wrench,
+  BadgeCheck,
+  LineChart,
+  Cpu,
+  Monitor,
+} from "lucide-react";
 
 export const personal = {
   name: "Ahmed Haseen",
@@ -12,7 +26,7 @@ export const personal = {
   linkedin: "https://linkedin.com/in/ahmedhaseen",
   github: "https://github.com/ahmedhaseen",
   summary:
-    "Motivated Data Analyst and aspiring Data Scientist pursuing a BSc (Hons) in Software Engineering at Sabaragamuwa University (GPA 3.64/4.00). Skilled in turning data into actionable insights using Python, SQL, and Power BI, with growing expertise in machine learning and AI-driven automation.",
+    "Motivated Data Analyst and aspiring Data Scientist pursuing a BSc (Hons) in Software Engineering at the Faculty of Computing, Sabaragamuwa University of Sri Lanka (GPA 3.64/4.00). Skilled in turning data into actionable insights using Python, SQL, and Power BI, with growing expertise in machine learning and AI-driven automation.",
 };
 
 export const stats = [
@@ -24,12 +38,12 @@ export const stats = [
 
 export const skills = [
   {
-    icon: "🐍",
+    icon: <Code size={20} />,
     title: "Programming",
     tags: ["Python", "Java", "JavaScript"],
   },
   {
-    icon: "📊",
+    icon: <BarChart3 size={20} />,
     title: "Data Analysis & Visualization",
     tags: [
       "Pandas",
@@ -42,30 +56,55 @@ export const skills = [
     ],
   },
   {
-    icon: "🤖",
-    title: "Machine Learning",
+    icon: <Search size={20} />,
+    title: "Data Analytics Techniques",
+    tags: [
+      "Data Cleaning",
+      "EDA",
+      "Feature Engineering",
+      "Descriptive Statistics",
+      "Web Scraping",
+    ],
+  },
+  {
+    icon: <Bot size={20} />,
+    title: "Machine Learning & AI Workflow Automation",
     tags: [
       "Scikit-learn",
       "Logistic Regression",
       "Random Forest",
-      "EDA",
+      "Model Evaluation",
       "n8n Automation",
     ],
   },
   {
-    icon: "🗄️",
+    icon: <Database size={20} />,
     title: "Databases",
-    tags: ["MySQL", "MongoDB"],
+    tags: ["MySQL", "PostgreSQL", "MongoDB"],
   },
   {
-    icon: "🌐",
+    icon: <Globe size={20} />,
     title: "Web Technologies",
-    tags: ["React.js", "Node.js", "Express.js", "HTML/CSS", "Tailwind CSS"],
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Next.js",
+      "HTML/CSS",
+      "Tailwind CSS",
+    ],
   },
   {
-    icon: "☁️",
-    title: "Cloud & Tools",
-    tags: ["Microsoft Azure", "GitHub", "VS Code", "Figma", "Canva"],
+    icon: <Wrench size={20} />,
+    title: "Tools & Platforms",
+    tags: [
+      "Microsoft Azure",
+      "GIt",
+      "GitHub",
+      "VS Code",
+      "Jupyter Notebook",
+      "Figma",
+    ],
   },
 ];
 
@@ -115,8 +154,8 @@ export const projects = [
     desc: "AI-driven mock interview simulator leveraging Agentic AI through n8n workflow automation. Delivers real-time analytics with personalised feedback on communication, confidence, and engagement.",
     image: ConfidFaceImage,
     tech: ["n8n", "Agentic AI", "Real-time Analytics", "Data Visualization"],
-    github: "https://github.com/ahmedhaseen",
-    demo: "https://github.com/ahmedhaseen",
+    github: "https://github.com/AhmedHaseen/ConfidFace-Web-App",
+    demo: "https://canva.link/4qq04ozyjoox918",
     featured: true,
   },
   {
@@ -165,7 +204,32 @@ export const projects = [
     image: SaveBiteImage,
     tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
     github: "https://github.com/ahmedhaseen",
-    demo: "https://github.com/ahmedhaseen",
+    demo: "https://www.linkedin.com/posts/ahmed-haseen_savebite-foodredistribution-webdevelopment-ugcPost-7363950554529554433-zoN6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF3BwpsBbkrPoPKR0OLGe6P4YxDGOWb-YjY",
+    featured: false,
+  },
+  {
+    title: "Bike Sales Analysis Dashboard",
+    status: "Completed",
+    category: "data",
+    desc: (
+      <>
+        <strong>Excel dashboard analyzing</strong> bike sales by customer
+        demographics. Cleaned duplicates and standardized data, engineered age
+        groups with IF functions, built <strong>Pivot Tables</strong> for income
+        and occupation analysis, and implemented dynamic filtering with
+        <strong>slicers</strong> for interactive insights.
+      </>
+    ),
+    image: ExcelProjImg,
+    tech: [
+      "Microsoft Excel",
+      "Pivot Tables",
+      "Data Cleaning",
+      "Feature Engineering",
+      "Data Visualization",
+    ],
+    github: "https://github.com/AhmedHaseen/Excel-Bike-Sales-Analysis",
+    demo: "https://canva.link/rpr1eqgjqf53zwi",
     featured: false,
   },
 ];
@@ -186,21 +250,25 @@ export const experience = [
 ];
 
 export const certifications = [
-  { name: "Data Analysis with Python", issuer: "IBM · Coursera", icon: "🔬" },
+  {
+    name: "What is Data Science?",
+    issuer: "IBM · Coursera",
+    icon: <BadgeCheck size={18} />,
+  },
   {
     name: "Data Visualization with Python",
-    issuer: "IBM · Coursera",
-    icon: "📈",
+    issuer: "Coursera · IBM",
+    icon: <LineChart size={18} />,
   },
   {
     name: "Python for Data Science, AI & Development",
     issuer: "IBM · Coursera",
-    icon: "🤖",
+    icon: <Cpu size={18} />,
   },
   {
     name: "Introduction to Front-End Development",
     issuer: "Meta · Coursera",
-    icon: "💻",
+    icon: <Monitor size={18} />,
   },
 ];
 
