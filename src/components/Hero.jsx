@@ -88,7 +88,7 @@ export default function Hero() {
                 </a>
                 <a
                   href={cvFile}
-                  download="My CV_Current.pdf"
+                  download="Ahmed Haseen.pdf"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-[#00D4AA]/30 bg-[#00D4AA]/10 text-[#00D4AA] font-medium rounded-lg text-sm hover:bg-[#00D4AA]/20 transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Download CV <Download size={15} />
