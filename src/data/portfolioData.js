@@ -30,10 +30,10 @@ export const personal = {
 };
 
 export const stats = [
-  { num: "3.64", label: "GPA / 4.00" },
-  { num: "5+", label: "Projects Built" },
-  { num: "4+", label: "CERTIFICATIONS" },
-  { num: "2+", label: "Years Volunteering" },
+  { num: "3.64", label: "GPA / 4.00", target: "education" },
+  { num: "5+", label: "Projects Built", target: "projects" },
+  { num: "4+", label: "CERTIFICATIONS", target: "experience" },
+  { num: "2+", label: "Years Volunteering", target: "experience" },
 ];
 
 export const skills = [
@@ -252,23 +252,37 @@ export const experience = [
 export const certifications = [
   {
     name: "What is Data Science?",
-    issuer: "IBM · Coursera",
-    icon: <BadgeCheck size={18} />,
-  },
-  {
-    name: "Data Visualization with Python",
     issuer: "Coursera · IBM",
-    icon: <LineChart size={18} />,
+    icon: <BadgeCheck size={18} />,
+    verifyUrl:
+      "https://www.coursera.org/account/accomplishments/verify/LWTSVVZYG6BJ",
   },
   {
-    name: "Python for Data Science, AI & Development",
-    issuer: "IBM · Coursera",
+    name: "Fast-Track Data Analysis and Presentations",
+    issuer: "Coursera · Google",
+    icon: <LineChart size={18} />,
+    verifyUrl:
+      "https://www.coursera.org/account/accomplishments/verify/8KAFLK42A0WL",
+  },
+  {
+    name: "Speed Up Data Analysis and Presentation Building",
+    issuer: "Coursera · Google",
     icon: <Cpu size={18} />,
+    verifyUrl:
+      "https://www.coursera.org/account/accomplishments/verify/US76CNCNL1EP",
+  },
+  {
+    name: "Marketing Analytics: Data Predictions and Dashboards",
+    issuer: "Coursera",
+    icon: <BarChart3 size={18} />,
+    verifyUrl:
+      "https://www.coursera.org/account/accomplishments/verify/5BLX66SSH4UP",
   },
   {
     name: "Introduction to Front-End Development",
     issuer: "Meta · Coursera",
     icon: <Monitor size={18} />,
+    verifyUrl: "https://example.com/certifications/front-end-development",
   },
 ];
 
@@ -277,7 +291,7 @@ export const education = [
     year: "2023–2027",
     degree: "BSc (Hons) in Software Engineering",
     inst: "Faculty of Computing, Sabaragamuwa University of Sri Lanka",
-    detail: "Current GPA: 3.73 / 4.00",
+    detail: "Current GPA: 3.64 / 4.00",
   },
   {
     year: "2019–2021",

@@ -192,15 +192,25 @@ export default function Hero() {
 
         {/* Stats bar */}
         <div className="mt-16 pt-8 border-t border-gray-100 dark:border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6 animate-fade-up animate-delay-500">
-          {stats.map(({ num, label }) => (
-            <div key={label} className="text-center lg:text-left">
-              <div className="font-display text-3xl font-bold text-[#00D4AA]">
+          {stats.map(({ num, label, target }) => (
+            <button
+              key={label}
+              type="button"
+              onClick={() =>
+                document
+                  .getElementById(target)
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="group text-center lg:text-left focus:outline-none"
+              aria-label={`Go to ${label.toLowerCase()}`}
+            >
+              <div className="inline-block font-display text-3xl font-bold text-[#00D4AA] transition-colors transition-transform group-hover:text-sky-400 group-hover:scale-105">
                 {num}
               </div>
-              <div className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-1">
+              <div className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-1 transition-colors group-hover:text-sky-400">
                 {label}
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
