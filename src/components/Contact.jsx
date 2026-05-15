@@ -8,7 +8,7 @@ const contactLinks = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "haseen2002hsn@gmail.com",
+    value: "mh.ahmedhaseen.ai@gmail.com",
     href: `mailto:${personal.email}`,
   },
   {

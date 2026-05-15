@@ -20,7 +20,7 @@ import {
 export const personal = {
   name: "Ahmed Haseen",
   title: "Data Analyst | Aspiring Data Scientist",
-  email: "haseen2002hsn@gmail.com",
+  email: "mh.ahmedhaseen.ai@gmail.com",
   phone: "+94767502206",
   location: "Sri Lanka",
   linkedin: "https://linkedin.com/in/ahmedhaseen",
