@@ -30,12 +30,12 @@ function EduCard({ year, degree, inst, detail, detailUrl, delay }) {
             href={detailUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex max-w-full flex-wrap text-center text-xs font-medium text-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1 rounded-full leading-snug break-words hover:text-sky-400 hover:scale-105 transition-colors transition-transform"
+            className="inline-flex max-w-full flex-wrap text-left text-xs font-medium text-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1 rounded-full leading-snug break-words whitespace-normal hover:text-sky-400 hover:scale-105 transition-colors transition-transform"
           >
             {detail}
           </a>
         ) : (
-          <span className="inline-flex max-w-full flex-wrap text-center text-xs font-medium text-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1 rounded-full leading-snug break-words">
+          <span className="inline-flex max-w-full flex-wrap text-left text-xs font-medium text-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1 rounded-full leading-snug break-words whitespace-normal">
             {detail}
           </span>
         )}

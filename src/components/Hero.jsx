@@ -82,14 +82,14 @@ export default function Hero() {
                       .getElementById("projects")
                       ?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="animated-accent-btn inline-flex items-center gap-2 px-6 py-3 font-medium rounded-lg text-sm hover:-translate-y-0.5"
+                  className="animated-accent-btn cta-pulse inline-flex items-center gap-2 px-6 py-3 font-medium rounded-lg text-sm hover:-translate-y-0.5"
                 >
                   View Projects <ArrowDown size={15} />
                 </a>
                 <a
                   href={cvFile}
                   download="Ahmed Haseen_CV.pdf"
-                  className="inline-flex items-center gap-2 px-6 py-3 border border-[#00D4AA]/30 bg-[#00D4AA]/10 text-[#00D4AA] font-medium rounded-lg text-sm hover:bg-[#00D4AA]/20 transition-all duration-200 hover:-translate-y-0.5"
+                  className="cta-pulse inline-flex items-center gap-2 px-6 py-3 border border-[#00D4AA]/30 bg-[#00D4AA]/10 text-[#00D4AA] font-medium rounded-lg text-sm hover:bg-[#00D4AA]/30 transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Download CV <Download size={15} />
                 </a>
@@ -97,7 +97,7 @@ export default function Hero() {
                   href="https://www.linkedin.com/posts/ahmed-haseen_videocv-dataanalysis-datascience-ugcPost-7393572535378001920-kryf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF3BwpsBbkrPoPKR0OLGe6P4YxDGOWb-YjY"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 border border-[#00D4AA]/30 bg-[#00D4AA]/10 text-[#00D4AA] font-medium rounded-lg text-sm hover:bg-[#00D4AA]/20 transition-all duration-200 hover:-translate-y-0.5"
+                  className="cta-pulse inline-flex items-center gap-2 px-6 py-3 border border-[#00D4AA]/30 bg-[#00D4AA]/10 text-[#00D4AA] font-medium rounded-lg text-sm hover:bg-[#00D4AA]/30 transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Watch My Video CV
                 </a>
@@ -217,6 +217,25 @@ export default function Hero() {
 
       <style>{`
         @keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+
+        @keyframes ctaPulse {
+          0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: scale(0.95);
+            opacity: 0.7;
+          }
+        }
+
+        .cta-pulse {
+          animation: ctaPulse 1.6s ease-in-out infinite;
+        }
+
+        .cta-pulse:hover {
+          animation-play-state: paused;
+        }
 
         @keyframes typeAhmed {
           0%, 6% { width: 0ch; }
