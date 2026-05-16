@@ -4,19 +4,18 @@ import SectionHeader from "./SectionHeader";
 import { softSkills, languages } from "../data/portfolioData";
 import newDpImg from "../assets/New_Dp.png";
 import educationImage from "../assets/Image_edu.jpg";
-import educationImage2 from "../assets/Image_edu_2.jpg";
+import sportImage from "../assets/img1_sport.jpg";
 
 export default function About() {
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
-  const aboutImages = [newDpImg, educationImage, educationImage2];
-  const mobileLoopImages = [...aboutImages, ...aboutImages];
+  const aboutImages = [newDpImg, educationImage, sportImage];
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const imagePositions = {
     [newDpImg]: "center 24%",
     [educationImage]: "center 40%",
-    [educationImage2]: "center 48%",
+    [sportImage]: "center 30%",
   };
 
   useEffect(() => {
@@ -53,8 +52,8 @@ export default function About() {
                 Python, SQL, Power BI, and machine learning
               </strong>
               , and I'm constantly expanding into AI-driven automation and
-              predictive modelling. Beyond tech, I'm a
-              martial arts competitor ( Karate & Taekwondo ) — discipline and creativity run through
+              predictive modelling. Beyond tech, I'm a martial arts competitor (
+              Karate & Taekwondo ) — discipline and creativity run through
               everything I do.
             </p>
 
@@ -103,23 +102,6 @@ export default function About() {
               ))}
             </div>
 
-            <div className="about-mobile-slider lg:hidden mt-4 w-full max-w-full overflow-hidden rounded-xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/5 shadow-sm">
-              <div className="about-mobile-track py-2">
-                {mobileLoopImages.map((imgSrc, index) => (
-                  <img
-                    key={`${imgSrc}-${index}`}
-                    src={imgSrc}
-                    alt="About visual"
-                    loading="lazy"
-                    style={{
-                      objectPosition: imagePositions[imgSrc] || "center center",
-                    }}
-                    className="w-[78vw] min-w-[220px] max-w-[380px] sm:w-[360px] md:w-[400px] h-auto max-h-[60vh] object-contain bg-gray-100 dark:bg-[#0f1a2f]/65 rounded-lg border border-gray-100 dark:border-white/10"
-                  />
-                ))}
-              </div>
-            </div>
-
             <div className="mt-6 lg:hidden">
               <h3 className="font-display font-semibold text-gray-900 dark:text-white mb-4">
                 Languages
@@ -157,29 +139,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      <style>{`
-        .about-mobile-track {
-          display: flex;
-          gap: 10px;
-          width: max-content;
-          animation: aboutMobileLoop 18s linear infinite;
-          will-change: transform;
-        }
-
-        .about-mobile-slider:hover .about-mobile-track {
-          animation-play-state: paused;
-        }
-
-        @keyframes aboutMobileLoop {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
     </section>
   );
 }

@@ -25,8 +25,40 @@ export const personal = {
   location: "Sri Lanka",
   linkedin: "https://linkedin.com/in/ahmedhaseen",
   github: "https://github.com/ahmedhaseen",
-  summary:
-    "Motivated Data Analyst and aspiring Data Scientist pursuing a BSc (Hons) in Software Engineering at the Faculty of Computing, Sabaragamuwa University of Sri Lanka (GPA 3.64/4.00). Skilled in turning data into actionable insights using Python, SQL, and Power BI, with growing expertise in machine learning and AI-driven automation.",
+  summary: (
+    <>
+      Motivated Data Analyst and aspiring Data Scientist pursuing a{" "}
+      <a
+        href="https://www.sab.ac.lk/computing/departments/dse-about"
+        target="_blank"
+        rel="noreferrer"
+        className="font-medium text-gray-900 dark:text-white hover:text-sky-400 transition-colors"
+      >
+        BSc (Hons) in Software Engineering
+      </a>{" "}
+      at the{" "}
+      <a
+        href="https://www.sab.ac.lk/computing/"
+        target="_blank"
+        rel="noreferrer"
+        className="font-medium text-gray-900 dark:text-white hover:text-sky-400 transition-colors"
+      >
+        Faculty of Computing
+      </a>
+      ,{" "}
+      <a
+        href="https://www.sab.ac.lk/"
+        target="_blank"
+        rel="noreferrer"
+        className="font-medium text-gray-900 dark:text-white hover:text-sky-400 transition-colors"
+      >
+        Sabaragamuwa University of Sri Lanka
+      </a>{" "}
+      (GPA 3.64/4.00). Skilled in turning data into actionable insights using
+      Python, SQL, and Power BI, with growing expertise in machine learning and
+      AI-driven automation.
+    </>
+  ),
 };
 
 export const stats = [
@@ -239,12 +271,14 @@ export const experience = [
     date: "2023 – Present",
     title: "Media Team Member (Graphic Designer)",
     org: "Muslim Majlis, Sabaragamuwa University of Sri Lanka",
+    orgUrl: "https://www.facebook.com/share/1BAF9GATPY/",
     desc: "Design religious posters, weekly reflections, and digital publications for official social media. Plan and execute cultural and awareness events.",
   },
   {
     date: "2022 – Present",
     title: "Taekwondo Coach",
     org: "Kalmunai Taekwondo Sports Academy",
+    orgUrl: "https://www.facebook.com/share/1CvTvFzeJv/",
     desc: "Provide coaching sessions for young athletes focusing on technical skills, discipline, and self-confidence. Promote teamwork and sportsmanship.",
   },
 ];
@@ -292,18 +326,24 @@ export const education = [
     degree: "BSc (Hons) in Software Engineering",
     inst: "Faculty of Computing, Sabaragamuwa University of Sri Lanka",
     detail: "Current GPA: 3.64 / 4.00",
+    detailUrl:
+      "https://drive.google.com/file/d/11A7VFLFxRbrzs0h4b1vgraJfEryj2fz7/view?usp=sharing",
   },
   {
     year: "2019–2021",
     degree: "G.C.E. Advanced Level – Physical Science",
     inst: "Zahira National College, Kalmunai",
     detail: "Z-Score: 1.3867 · Combined Math: B · Chemistry: B · Physics: C",
+    detailUrl:
+      "https://drive.google.com/file/d/1B1szygwocF7O0vxA6kIZp2BOgU0hmVWa/view?usp=sharing",
   },
   {
     year: "2018",
     degree: "G.C.E. Ordinary Level",
     inst: "Zahira National College, Kalmunai",
     detail: "9 A's in all subjects",
+    detailUrl:
+      "https://drive.google.com/file/d/1_Ia5ElAhTCtIL2CShK8nWZedJR_m1Whd/view?usp=sharing",
   },
 ];
 
@@ -312,21 +352,29 @@ export const achievements = [
     emoji: "🥉",
     title: "Bronze Medalist – Taekwondo",
     sub: "SLUG 2025 · Sabaragamuwa University",
+    titleUrl:
+      "https://drive.google.com/file/d/1Q8ZWZYJ7kej8gEX-DtWBQi3jrF8vKkxT/view?usp=sharing",
   },
   {
     emoji: "🥋",
     title: "Black Belt – 2nd Dan (Nidan) Karate",
     sub: "Sri Lanka Karate Federation (SLKF)",
+    titleUrl:
+      "https://drive.google.com/file/d/1hdvGJfIfduY_Hasec2It87CCaqM0WJUw/view?usp=sharing",
   },
   {
     emoji: "🏆",
     title: "Champion – Karate Team Kata",
     sub: "Eastern Province School Meet 2019",
+    titleUrl:
+      "https://drive.google.com/file/d/1wYlCjsMNNVffhCXqvrOAL1nehckgHYpl/view?usp=sharing",
   },
   {
     emoji: "🎓",
     title: "9 A's at O/Level",
     sub: "Zahira National College 2018",
+    titleUrl:
+      "https://drive.google.com/file/d/1_Ia5ElAhTCtIL2CShK8nWZedJR_m1Whd/view?usp=sharing",
   },
 ];
 

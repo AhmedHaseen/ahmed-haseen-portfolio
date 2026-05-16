@@ -17,7 +17,7 @@ const achievementImages = achievementImageContext
     alt: path.replace("./", "").replace(/\.[^/.]+$/, ""),
   }));
 
-function AchCard({ emoji, title, sub, delay }) {
+function AchCard({ emoji, title, sub, titleUrl, delay }) {
   const [ref, inView] = useInView();
   return (
     <div
@@ -28,9 +28,20 @@ function AchCard({ emoji, title, sub, delay }) {
       }`}
     >
       <span className="text-4xl mb-4 block">{emoji}</span>
-      <h3 className="font-display font-semibold text-gray-900 dark:text-white text-sm mb-2 leading-snug">
-        {title}
-      </h3>
+      {titleUrl ? (
+        <a
+          href={titleUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="font-display font-semibold text-gray-900 dark:text-white text-sm mb-2 leading-snug hover:text-sky-400 hover:scale-105 transition-colors transition-transform"
+        >
+          {title}
+        </a>
+      ) : (
+        <h3 className="font-display font-semibold text-gray-900 dark:text-white text-sm mb-2 leading-snug">
+          {title}
+        </h3>
+      )}
       <p className="text-xs text-gray-500 dark:text-gray-500">{sub}</p>
     </div>
   );

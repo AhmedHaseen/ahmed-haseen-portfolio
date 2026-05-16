@@ -3,7 +3,7 @@ import { useInView } from "../hooks/useInView";
 import SectionHeader from "./SectionHeader";
 import { experience, certifications } from "../data/portfolioData";
 
-function TimelineItem({ date, title, org, desc, delay }) {
+function TimelineItem({ date, title, org, orgUrl, desc, delay }) {
   const [ref, inView] = useInView();
   return (
     <div
@@ -21,7 +21,18 @@ function TimelineItem({ date, title, org, desc, delay }) {
       <h3 className="font-display font-semibold text-gray-900 dark:text-white text-base mb-0.5">
         {title}
       </h3>
-      <p className="text-sm text-gray-500 dark:text-gray-500 mb-2">{org}</p>
+      {orgUrl ? (
+        <a
+          href={orgUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block text-sm font-semibold text-gray-700 dark:text-gray-400 mb-2 hover:text-sky-400 hover:scale-105 transition-colors transition-transform"
+        >
+          {org}
+        </a>
+      ) : (
+        <p className="text-sm text-gray-500 dark:text-gray-500 mb-2">{org}</p>
+      )}
       <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
         {desc}
       </p>

@@ -3,9 +3,9 @@ import { useInView } from "../hooks/useInView";
 import SectionHeader from "./SectionHeader";
 import { education } from "../data/portfolioData";
 import educationImage from "../assets/Image_edu.jpg";
-import educationImage2 from "../assets/Image_edu_2.jpg";
+import dpFinalImg from "../assets/Dp_Final.png";
 
-function EduCard({ year, degree, inst, detail, delay }) {
+function EduCard({ year, degree, inst, detail, detailUrl, delay }) {
   const [ref, inView] = useInView();
   return (
     <div
@@ -20,21 +20,32 @@ function EduCard({ year, degree, inst, detail, delay }) {
           {year}
         </span>
       </div>
-      <div className="border-l border-gray-100 dark:border-white/10 pl-6">
+      <div className="min-w-0 border-l border-gray-100 dark:border-white/10 pl-6">
         <h3 className="font-display font-bold text-gray-900 dark:text-white text-base mb-1">
           {degree}
         </h3>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{inst}</p>
-        <span className="inline-block text-xs font-medium text-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1 rounded-full">
-          {detail}
-        </span>
+        {detailUrl ? (
+          <a
+            href={detailUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex max-w-full flex-wrap text-center text-xs font-medium text-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1 rounded-full leading-snug break-words hover:text-sky-400 hover:scale-105 transition-colors transition-transform"
+          >
+            {detail}
+          </a>
+        ) : (
+          <span className="inline-flex max-w-full flex-wrap text-center text-xs font-medium text-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1 rounded-full leading-snug break-words">
+            {detail}
+          </span>
+        )}
       </div>
     </div>
   );
 }
 
 export default function Education() {
-  const educationImages = [educationImage, educationImage2];
+  const educationImages = [educationImage, dpFinalImg];
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useEffect(() => {
