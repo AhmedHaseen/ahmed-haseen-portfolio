@@ -6,6 +6,7 @@ import {
   Phone,
   ArrowDown,
   Download,
+  Eye,
 } from "lucide-react";
 import dpFinalImg from "../assets/Dp_Final.png";
 import newDpImg from "../assets/New_Dp.png";
@@ -88,10 +89,11 @@ export default function Hero() {
                 </a>
                 <a
                   href={cvFile}
-                  download="Ahmed Haseen_CV.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                   className="cta-pulse inline-flex items-center gap-2 px-6 py-3 border border-[#00D4AA]/30 bg-[#00D4AA]/10 text-[#00D4AA] font-medium rounded-lg text-sm hover:bg-[#00D4AA]/30 transition-all duration-200 hover:-translate-y-0.5"
                 >
-                  Download CV <Download size={15} />
+                  View My CV <Eye size={15} />
                 </a>
                 <a
                   href="https://www.linkedin.com/posts/ahmed-haseen_videocv-dataanalysis-datascience-ugcPost-7393572535378001920-kryf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF3BwpsBbkrPoPKR0OLGe6P4YxDGOWb-YjY"
