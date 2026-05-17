@@ -1,4 +1,5 @@
 import ConfidFaceImage from "../assets/Confidface_img.png";
+import SareeBazarImage from "../assets/community_ui.jpg";
 import SaveBiteImage from "../assets/SaveBite_WebApp_Img.png";
 import SQLProjImage from "../assets/SQL_Proj_Img.png";
 import BIDataInsightImg from "../assets/BI_Data Insight_Img.png";
@@ -180,12 +181,32 @@ export const projects = [
     featured: true,
   },
   {
+    title: "Saree Bazar – E-Commerce Web System",
+    status: "Ongoing",
+    category: "web",
+    desc: "A full-featured e-commerce platform for a retail saree shop in Badulla, Sri Lanka, built as a university community project. Features product browsing with categorization, shopping cart, secure payments, order tracking, wishlist, customer reviews, and an admin dashboard. Includes an optional AI-based virtual try-on module for personalized saree recommendations.",
+    image: SareeBazarImage,
+    tech: ["Next.js", "React", "Flask", "Tailwind CSS", "MongoDB"],
+    github: "https://github.com/kaveenskn/SareeBazar",
+    demo: "",
+    featured: false,
+  },
+  {
     title: "ConfidFace – AI Mock Interview App",
     status: "Completed",
     category: "web",
-    desc: "AI-driven mock interview simulator leveraging Agentic AI through n8n workflow automation. Delivers real-time analytics with personalised feedback on communication, confidence, and engagement.",
+    desc: "A web-based AI-powered mock interview application for students and job seekers. Features an AI-generated interviewer video that plays when asking questions and pauses while the candidate responds — simulating a real interview experience. Generates role-specific questions from resumes or job descriptions, and delivers automated feedback with performance ratings.",
     image: ConfidFaceImage,
-    tech: ["n8n", "Agentic AI", "Real-time Analytics", "Data Visualization"],
+    tech: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "n8n",
+      "Google Gemini API",
+      "Clerk",
+      "Convex",
+      "ArcJet",
+    ],
     github: "https://github.com/AhmedHaseen/ConfidFace-Web-App",
     demo: "https://canva.link/4qq04ozyjoox918",
     featured: true,
