@@ -61,7 +61,7 @@ export default function Footer() {
                 label: "Facebook",
               },
               {
-                href: "https://wa.me/94722913787",
+                href: "https://wa.me/94767502206",
                 Icon: WhatsappIcon,
                 label: "WhatsApp",
               },
