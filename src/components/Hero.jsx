@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   Github,
   Linkedin,
@@ -9,22 +9,10 @@ import {
   Eye,
 } from "lucide-react";
 import dpFinalImg from "../assets/Dp_Final.png";
-import newDpImg from "../assets/New_Dp.png";
 import cvFile from "../assets/Ahmed Haseen_CV.pdf";
 import { personal, stats } from "../data/portfolioData";
 
 export default function Hero() {
-  const profileImages = [dpFinalImg, newDpImg];
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setActiveImageIndex((prev) => (prev + 1) % profileImages.length);
-    }, 2800);
-
-    return () => clearInterval(intervalId);
-  }, [profileImages.length]);
-
   return (
     <section
       id="hero"
@@ -175,19 +163,11 @@ export default function Hero() {
               >
                 <div className="w-full h-full rounded-full bg-white dark:bg-[#0A0F1E]" />
               </div>
-              {profileImages.map((img, index) => (
-                <img
-                  key={img}
-                  src={img}
-                  alt="Ahmed Haseen"
-                  style={{
-                    objectPosition: index === 1 ? "center 22%" : "center top",
-                  }}
-                  className={`absolute inset-1.5 w-[calc(100%-12px)] h-[calc(100%-12px)] rounded-full object-cover object-top transition-opacity duration-700 ${
-                    activeImageIndex === index ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              ))}
+              <img
+                src={dpFinalImg}
+                alt="Ahmed Haseen"
+                className="absolute inset-1.5 w-[calc(100%-12px)] h-[calc(100%-12px)] rounded-full object-cover object-top"
+              />
             </div>
           </div>
         </div>

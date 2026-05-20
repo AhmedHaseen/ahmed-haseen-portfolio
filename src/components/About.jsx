@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "../hooks/useInView";
 import SectionHeader from "./SectionHeader";
 import { softSkills, languages } from "../data/portfolioData";
+import dpFinalImg from "../assets/Dp_Final.png";
 import newDpImg from "../assets/New_Dp.png";
 import educationImage from "../assets/Image_edu.jpg";
 import sportImage from "../assets/img1_sport.jpg";
@@ -9,10 +10,11 @@ import sportImage from "../assets/img1_sport.jpg";
 export default function About() {
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
-  const aboutImages = [newDpImg, educationImage, sportImage];
+  const aboutImages = [dpFinalImg, newDpImg, educationImage, sportImage];
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const imagePositions = {
+    [dpFinalImg]: "center top",
     [newDpImg]: "center 24%",
     [educationImage]: "center 40%",
     [sportImage]: "center 30%",
