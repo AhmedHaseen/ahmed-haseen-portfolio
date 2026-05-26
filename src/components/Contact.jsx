@@ -61,9 +61,7 @@ export default function Contact() {
         <SectionHeader label="Say Hello" title="Get In" accent="Touch" />
 
         <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-3xl">
-          I'm open to internship opportunities, freelance data projects,
-          research collaborations, and full-time roles. Feel free to reach out —
-          I'd love to connect!
+         I’m currently seeking internship and junior-level opportunities in Data Analytics, Business Intelligence, Business Analysis, and Data Science, where I can contribute to meaningful projects, gain real-world experience, and continue growing my technical and analytical skills. Feel free to connect!
         </p>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
