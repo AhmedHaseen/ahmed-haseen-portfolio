@@ -256,7 +256,7 @@ export const projects = [
     desc: "Full-stack MERN platform connecting restaurants and NGOs to minimise food waste. Includes real-time availability tracking, request management, and impact analytics.",
     image: SaveBiteImage,
     tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
-    github: "https://github.com/ahmedhaseen",
+    github: "https://github.com/AhmedHaseen/SE4106-Web-Project",
     demo: "https://www.linkedin.com/posts/ahmed-haseen_savebite-foodredistribution-webdevelopment-ugcPost-7363950554529554433-zoN6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF3BwpsBbkrPoPKR0OLGe6P4YxDGOWb-YjY",
     featured: false,
   },
