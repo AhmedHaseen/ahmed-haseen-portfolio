@@ -16,7 +16,7 @@ This is my personal portfolio website built with React 18 and Tailwind CSS. It f
 
 **Data & Analytics** — Python, Pandas, NumPy, SQL, Power BI, Tableau, Excel
 
-**Machine Learning** — Scikit-learn, Random Forest, Logistic Regression, EDA ,  Feature Engineering
+**Machine Learning** — Scikit-learn, Random Forest, Logistic Regression, EDA , Feature Engineering
 
 **Web Development** — React.js, Node.js, Express.js, Tailwind CSS
 
@@ -37,4 +37,4 @@ This is my personal portfolio website built with React 18 and Tailwind CSS. It f
 
 ## Contact
 
-📧 haseen2002hsn@gmail.com &nbsp;|&nbsp; 💼 [LinkedIn](https://linkedin.com/in/ahmedhaseen) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/ahmedhaseen)
+📧 haseen2002hsn@gmail.com &nbsp;|&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/ahmed-haseen/) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/ahmedhaseen)

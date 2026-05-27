@@ -24,7 +24,7 @@ export const personal = {
   email: "mh.ahmedhaseen.ai@gmail.com",
   phone: "+94767502206",
   location: "Sri Lanka",
-  linkedin: "https://linkedin.com/in/ahmedhaseen",
+  linkedin: "https://www.linkedin.com/in/ahmed-haseen/",
   github: "https://github.com/ahmedhaseen",
   summary: (
     <>
@@ -354,7 +354,15 @@ export const education = [
     year: "2019–2021",
     degree: "G.C.E. Advanced Level – Physical Science",
     inst: "Zahira National College, Kalmunai",
-    detail: "Z-Score: 1.3867 · Combined Maths: B · Chemistry: B · Physics: C",
+    detail: (
+      <>
+        <span className="block sm:inline">Z-Score: 1.3867</span>
+        <span className="hidden sm:inline"> · </span>
+        <span className="block sm:inline">
+          Combined Maths: B · Chemistry: B · Physics: C
+        </span>
+      </>
+    ),
     detailUrl:
       "https://drive.google.com/file/d/1B1szygwocF7O0vxA6kIZp2BOgU0hmVWa/view?usp=sharing",
   },
