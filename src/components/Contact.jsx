@@ -61,7 +61,7 @@ export default function Contact() {
         <SectionHeader label="Say Hello" title="Get In" accent="Touch" />
 
         <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-3xl">
-          I’m currently seeking internship and junior-level opportunities in{" "}
+          I’m currently seeking internship and entry-level opportunities in{" "}
           <span className="font-semibold">Data Analytics</span>,{" "}
           <span className="font-semibold">Business Intelligence</span>,{" "}
           <span className="font-semibold">Business Analysis</span>,{" "}

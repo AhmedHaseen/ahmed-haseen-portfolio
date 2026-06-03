@@ -53,8 +53,9 @@ export default function About() {
               <strong className="text-gray-900 dark:text-white font-medium">
                 Python, SQL, Power BI, and machine learning
               </strong>
-              , and I'm constantly expanding into AI-driven automation and
-              predictive modelling. Beyond tech, I'm a martial arts competitor (
+              , and I'm continuously expanding my expertise in <strong className="text-gray-900 dark:text-white font-medium">
+                data analytics, business intelligence, predictive modelling, and AI-driven automation.
+              </strong> Beyond tech, I'm a martial arts competitor (
               Karate & Taekwondo ) — discipline and creativity run through
               everything I do.
             </p>
