@@ -9,7 +9,7 @@ import {
   Eye,
 } from "lucide-react";
 import dpFinalImg from "../assets/Dp_Final.png";
-import cvFile from "../assets/Ahmed Haseen_CV.pdf";
+import cvFile from "../assets/Haseen_Data Analyst Intern.pdf";
 import { personal, stats } from "../data/portfolioData";
 
 export default function Hero() {
