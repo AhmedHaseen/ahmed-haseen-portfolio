@@ -348,7 +348,7 @@ export const education = [
     inst: "Faculty of Computing, Sabaragamuwa University of Sri Lanka",
     detail: "Current GPA: 3.64 / 4.00",
     detailUrl:
-      "https://drive.google.com/file/d/11A7VFLFxRbrzs0h4b1vgraJfEryj2fz7/view?usp=sharing",
+      "https://drive.google.com/file/d/1xwJB1mM-XtORi-E83BFlLtx8XphGP_E4/view?usp=sharing",
   },
   {
     year: "2019–2021",
