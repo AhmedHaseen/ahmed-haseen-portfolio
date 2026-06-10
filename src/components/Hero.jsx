@@ -143,6 +143,7 @@ export default function Hero() {
                 </a>
               ))}
             </div>
+
           </div>
 
           {/* Profile photo */}
@@ -186,7 +187,7 @@ export default function Hero() {
               className="group text-center lg:text-left focus:outline-none"
               aria-label={`Go to ${label.toLowerCase()}`}
             >
-              <div className="inline-block font-display text-3xl font-bold text-[#00D4AA] transition-colors transition-transform group-hover:text-sky-400 group-hover:scale-105">
+              <div className="inline-block font-display text-3xl font-bold text-[#00D4AA] transition-all group-hover:text-sky-400 group-hover:scale-105">
                 {num}
               </div>
               <div className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-1 transition-colors group-hover:text-sky-400">
