@@ -40,24 +40,83 @@ export default function About() {
             className={`min-w-0 overflow-visible lg:flex lg:flex-col lg:h-full transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed break-words mb-4">
-              I'm a motivated{" "}
+              I'm a{" "}
               <strong className="text-gray-900 dark:text-white font-medium">
-                Data Analyst and aspiring Data Scientist
+                Software Engineering undergraduate
               </strong>{" "}
-              currently pursuing a BSc (Hons) in Software Engineering at
-              Sabaragamuwa University of Sri Lanka. I love transforming complex
-              datasets into clear, compelling insights.
+              at Sabaragamuwa University of Sri Lanka with a strong interest in{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                Data Analytics
+              </strong>
+              ,{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                Data Science
+              </strong>
+              , and{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                AI-driven technologies
+              </strong>
+              .
             </p>
             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed break-words mb-4">
-              My toolkit spans{" "}
+              My background combines{" "}
               <strong className="text-gray-900 dark:text-white font-medium">
-                Python, SQL, Power BI, and machine learning
+                software engineering
               </strong>
-              , and I'm continuously expanding my expertise in <strong className="text-gray-900 dark:text-white font-medium">
-                data analytics, business intelligence, predictive modelling, and AI-driven automation.
-              </strong> Beyond tech, I'm a martial arts competitor (
-              Karate & Taekwondo ) — discipline and creativity run through
-              everything I do.
+              ,{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                business analysis
+              </strong>
+              , and{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                data analytics
+              </strong>
+              , giving me experience in{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                requirements engineering
+              </strong>
+              ,{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                system design
+              </strong>
+              ,{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                full-stack development
+              </strong>
+              ,{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                data visualization
+              </strong>
+              , and{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                business-focused problem solving.
+              </strong>{" "}
+              I enjoy transforming data into meaningful insights that support
+              better decision-making and real-world solutions.
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed break-words mb-4">
+              Currently, I am expanding my expertise in{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                machine learning
+              </strong>
+              ,{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                predictive analytics
+              </strong>
+              ,{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                cloud technologies
+              </strong>
+              , and{" "}
+              <strong className="text-gray-900 dark:text-white font-medium">
+                modern data platforms
+              </strong>{" "}
+              through hands-on projects and continuous learning.
+            </p>
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed break-words mb-4">
+              Beyond technology, I am a competitive Karate and Taekwondo
+              athlete, where discipline, resilience, and continuous improvement
+              shape both my personal and professional growth.
             </p>
 
             {/* Languages */}

@@ -35,11 +35,7 @@ export default function Skills() {
   return (
     <section id="skills" className="section-bg py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          label="What I Work With"
-          title="Technical"
-          accent="Skills"
-        />
+        <SectionHeader label="</>" title="Technical" accent="Skills" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {skills.map((s, i) => (
             <SkillCard key={s.title} {...s} delay={i * 80} />

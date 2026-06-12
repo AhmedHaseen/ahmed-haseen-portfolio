@@ -60,16 +60,43 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader label="Say Hello" title="Get In" accent="Touch" />
 
-        <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-3xl">
-          I’m currently seeking internship and entry-level opportunities in{" "}
-          <span className="font-semibold">Data Analytics</span>,{" "}
-          <span className="font-semibold">Business Intelligence</span>,{" "}
-          <span className="font-semibold">Business Analysis</span>,{" "}
-          <span className="font-semibold">Data Science</span>, and{" "}
-          <span className="font-semibold">Machine Learning</span>, where I can
-          contribute to meaningful projects, gain real-world experience, and
-          continue growing my technical and analytical skills. Feel free to
-          connect!
+        <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-5xl">
+          I’m currently seeking internship & entry-level opportunities in{" "}
+          <span className="font-semibold text-white">Data Analysis</span>,{" "}
+          <span className="font-semibold text-white">
+            Business Intelligence
+          </span>
+          , <span className="font-semibold text-white">Business Analysis</span>,
+          and <span className="font-semibold text-white">Data Science</span>,
+          where I can apply analytical thinking, technical expertise, and
+          problem-solving skills to real-world challenges.
+        </p>
+
+        <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-5xl">
+          With a foundation in{" "}
+          <span className="font-semibold text-white">Software Engineering</span>{" "}
+          and growing expertise in{" "}
+          <span className="font-semibold text-white">data analytics</span>,{" "}
+          <span className="font-semibold text-white">machine learning</span>,
+          and{" "}
+          <span className="font-semibold text-white">AI-driven solutions</span>,
+          I am passionate about leveraging data and technology to create
+          meaningful business impact and support data-driven decision-making.
+        </p>
+
+        <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-5xl">
+          Whether you're looking for a{" "}
+          <span className="font-semibold text-white">Data Analyst Intern</span>,{" "}
+          <span className="font-semibold text-white">
+            Business Analyst Intern
+          </span>
+          ,{" "}
+          <span className="font-semibold text-white">Data Science Intern</span>,
+          or a motivated{" "}
+          <span className="font-semibold text-white">
+            Software Engineering undergraduate </span>
+          with a strong interest in data and AI, I’d be happy to connect and
+          explore opportunities.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">

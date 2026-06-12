@@ -20,7 +20,7 @@ import {
 
 export const personal = {
   name: "Ahmed Haseen",
-  title: "Data Analyst | Aspiring Data Scientist",
+  title: "Data Analyst | Aspiring Data Scientist | SE Undergraduate",
   email: "mh.ahmedhaseen.ai@gmail.com",
   phone: "+94767502206",
   location: "Sri Lanka",
@@ -28,14 +28,13 @@ export const personal = {
   github: "https://github.com/ahmedhaseen",
   summary: (
     <>
-      Motivated Data Analyst and aspiring Data Scientist pursuing a{" "}
       <a
         href="https://www.sab.ac.lk/computing/departments/dse-about"
         target="_blank"
         rel="noreferrer"
         className="font-medium text-gray-900 dark:text-white hover:text-sky-400 transition-colors"
       >
-        BSc (Hons) in Software Engineering
+        Software Engineering Undergraduate
       </a>{" "}
       at the{" "}
       <a
@@ -55,9 +54,11 @@ export const personal = {
       >
         Sabaragamuwa University of Sri Lanka
       </a>{" "}
-      (GPA 3.64/4.00). Skilled in turning data into actionable insights using
-      Python, SQL, and Power BI, with growing expertise in machine learning and
-      AI-driven automation.
+      (GPA: 3.64/4.00) with a strong interest in Data Analytics, Data Science,
+      and AI-driven solutions. Skilled in Python, SQL, Excel, and Power BI, with
+      hands-on experience in analytics, business-focused problem solving, and
+      full-stack software development. Currently expanding expertise in machine
+      learning and modern data technologies through practical projects.
     </>
   ),
 };
@@ -161,9 +162,9 @@ export const projects = [
         <strong>ETL</strong>, interactive dashboards, and{" "}
         <strong>ML-based prediction</strong>. Built <strong>SQL</strong> Server
         pipelines with staging tables and optimized views, developed{" "}
-        <strong>power bi</strong>
+        <strong>power bi </strong>
         dashboards with <strong>DAX</strong> measures and custom tooltips, and
-        implemented a<strong>Random Forest classifier</strong> in Python to
+        implemented a<strong> Random Forest classifier</strong> in Python to
         identify high-risk customers and support retention strategies.
       </>
     ),

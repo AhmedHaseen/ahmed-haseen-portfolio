@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Phone,
-  ArrowDown,
-  Download,
-  Eye,
-} from "lucide-react";
+import { Github, Linkedin, Mail, Phone, ArrowDown, Eye } from "lucide-react";
 import dpFinalImg from "../assets/Dp_Final.png";
 import cvFile from "../assets/Haseen_Data Analyst Intern.pdf";
 import { personal, stats } from "../data/portfolioData";
@@ -39,7 +31,7 @@ export default function Hero() {
             {/* Available badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00D4AA]/30 bg-[#00D4AA]/10 text-[#00D4AA] text-xs font-medium uppercase tracking-widest mb-6 animate-fade-in">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00D4AA] animate-blink" />
-              Available for Opportunities
+              Hi! I'm
             </div>
 
             <h1 className="font-display font-extrabold text-5xl sm:text-6xl lg:text-7xl tracking-tight leading-none text-gray-900 dark:text-white mb-4 animate-fade-up">
@@ -143,7 +135,6 @@ export default function Hero() {
                 </a>
               ))}
             </div>
-
           </div>
 
           {/* Profile photo */}
