@@ -54,7 +54,7 @@ export const personal = {
       >
         Sabaragamuwa University of Sri Lanka
       </a>{" "}
-      (GPA: 3.64/4.00) with a strong interest in Data Analytics, Data Science,
+      (GPA: 3.65/4.00) with a strong interest in Data Analytics, Data Science,
       and AI-driven solutions. Skilled in Python, SQL, Excel, and Power BI, with
       hands-on experience in analytics, business-focused problem solving, and
       full-stack software development. Currently expanding expertise in machine
@@ -64,7 +64,7 @@ export const personal = {
 };
 
 export const stats = [
-  { num: "3.64", label: "GPA / 4.00", target: "education" },
+  { num: "3.65", label: "GPA / 4.00", target: "education" },
   { num: "5+", label: "Projects Built", target: "projects" },
   { num: "4+", label: "CERTIFICATIONS", target: "experience" },
   { num: "2+", label: "Years Volunteering", target: "experience" },
@@ -347,7 +347,7 @@ export const education = [
     year: "2023–2027",
     degree: "BSc (Hons) in Software Engineering",
     inst: "Faculty of Computing, Sabaragamuwa University of Sri Lanka",
-    detail: "Current GPA: 3.64 / 4.00",
+    detail: "Current GPA: 3.65 / 4.00",
     detailUrl:
       "https://drive.google.com/file/d/1xwJB1mM-XtORi-E83BFlLtx8XphGP_E4/view?usp=sharing",
   },
