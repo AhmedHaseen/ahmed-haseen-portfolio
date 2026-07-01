@@ -4,6 +4,7 @@ import SaveBiteImage from "../assets/SaveBite_WebApp_Img.png";
 import SQLProjImage from "../assets/SQL_Proj_Img.png";
 import BIDataInsightImg from "../assets/BI_Data Insight_Img.png";
 import ExcelProjImg from "../assets/Excel_Proj_img.png";
+import ChurnProjImg from "../assets/Churn Project_Img.png";
 import {
   Code,
   BarChart3,
@@ -154,21 +155,21 @@ export const proficiency = [
 export const projects = [
   {
     title: "Customer Churn Prediction",
-    status: "Ongoing",
+    status: "Completed",
     category: "data",
     desc: (
       <>
-        <strong>Ongoing telecom churn analysis project</strong> covering{" "}
+        End-to-end telecom churn analysis project covering{" "}
         <strong>ETL</strong>, interactive dashboards, and{" "}
         <strong>ML-based prediction</strong>. Built <strong>SQL</strong> Server
         pipelines with staging tables and optimized views, developed{" "}
-        <strong>power bi </strong>
+        <strong>Power BI</strong>{" "}
         dashboards with <strong>DAX</strong> measures and custom tooltips, and
-        implemented a<strong> Random Forest classifier</strong> in Python to
+        implemented a <strong>Random Forest classifier</strong> in Python to
         identify high-risk customers and support retention strategies.
       </>
     ),
-    image: null,
+    image: ChurnProjImg,
     tech: [
       "SQL",
       "Power BI",
@@ -177,8 +178,8 @@ export const projects = [
       "Pandas",
       "Jupyter Notebook",
     ],
-    github: "https://github.com/ahmedhaseen",
-    demo: "https://github.com/ahmedhaseen",
+    github: "https://github.com/AhmedHaseen/telecom-customer-churn-analytics-prediction",
+    demo: "https://github.com/AhmedHaseen/telecom-customer-churn-analytics-prediction",
     featured: true,
   },
   {
